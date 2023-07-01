@@ -8,8 +8,6 @@ using UnityEngine;
 public class CameraMouseMovement : MonoBehaviour
 {
     public float rotationSpeed = 5f;
-    public float maxVerticalAngle = 30f;
-    public float minVerticalAngle = -15f;
 
     private float yaw = 0f;
     private float pitch = 0f;
@@ -23,8 +21,6 @@ public class CameraMouseMovement : MonoBehaviour
 
             yaw += mouseX * rotationSpeed;
             pitch -= mouseY * rotationSpeed;
-
-            pitch = Mathf.Clamp(pitch, minVerticalAngle, maxVerticalAngle);
 
             transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
         }

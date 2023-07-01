@@ -9,4 +9,5 @@ public interface IPointer
     public void OnPointerEnter();
     public void OnPointerExit();
 
+    public bool hasBeenSelected();
 }

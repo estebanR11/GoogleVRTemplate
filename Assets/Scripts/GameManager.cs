@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,12 +10,13 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance => instance;
 
+    [SerializeField] EmojiDataSO emojiSelectedData;
 
-    int emotionId;
-    int levelId=-1;
-    int musicId =-1;
+    [Header("Canvases")]
+    [SerializeField] private GameObject startingCanvas;
 
     [Header("UIs")]
+  
     [SerializeField] private GameObject initialEmotionid;
     [SerializeField] private GameObject customUI;
 
@@ -25,6 +27,7 @@ public class GameManager : MonoBehaviour
 
     [Header("Managers")]
     [SerializeField] private SoundManager soundManager;
+
     private void Awake(){
         if (instance != null && instance != this)
         {
@@ -36,31 +39,18 @@ public class GameManager : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void SetEmotionId(int id)
+    public void SetNewEmojiData(EmojiDataSO newEmoji)
     {
-        emotionId = id;
-        initialEmotionid.SetActive(false);
-        customUI.SetActive(true);
+        emojiSelectedData = newEmoji;
     }
 
-    public void SetLevelId(int id)
+    public void QuitApp()
     {
-        levelId = id;
-        if(musicId != -1)
-        {
-            customUI.SetActive(false);
-        }
-        levelPicked[levelId].SetActive(true);
-        baseLevel.SetActive(false);
+        Application.Quit();
     }
 
-    public void SetMusicId(int id)
+    public void ResetLevel()
     {
-        musicId = id;
-        if (levelId != -1)
-        {
-            customUI.SetActive(false);
-        }
-        soundManager.SetAudio(musicId);
+        SceneManager.LoadScene(0);
     }
 }
