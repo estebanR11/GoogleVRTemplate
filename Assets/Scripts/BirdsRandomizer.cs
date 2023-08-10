@@ -7,44 +7,40 @@ public class BirdsRandomizer : MonoBehaviour
 
     public float speed = 5f;
     public float rotationSpeed = 2f;
-    public float minX = -32f;
-    public float maxX = 36f;
-    public float minZ = 63f;
-    public float maxZ = 125f;
-    private Vector3 targetPosition;
+    public List<Transform> waypoints;
+    private int currentWaypointIndex = 0;
     private Quaternion targetRotation;
 
     void Start()
     {
-        GenerateRandomPosition();
+        if (waypoints.Count > 0)
+            SetNextWaypoint();
     }
 
     void Update()
     {
-        Vector3 targetDirection = targetPosition - transform.position;
-        targetDirection.y = 0f;
+        if (waypoints.Count == 0)
+            return;
+
+        Vector3 targetDirection = waypoints[currentWaypointIndex].position - transform.position;
+        targetDirection.x = -90f;
         targetRotation = Quaternion.LookRotation(targetDirection, Vector3.up);
         transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
 
-        if (Vector3.Distance(transform.position, targetPosition) < 0.1f)
+        if (Vector3.Distance(transform.position, waypoints[currentWaypointIndex].position) < 0.1f)
         {
-            GenerateRandomPosition();
+            SetNextWaypoint();
         }
     }
 
-    void GenerateRandomPosition()
+    void SetNextWaypoint()
     {
-        float randomX = Random.Range(minX, maxX);
-        float randomZ = Random.Range(minZ, maxZ);
-        targetPosition = new Vector3(randomX, transform.position.y, randomZ);
+        currentWaypointIndex = Random.Range(0, waypoints.Count);
     }
 
     void LateUpdate()
     {
-        Vector3 clampedPosition = transform.position;
-        clampedPosition.x = Mathf.Clamp(clampedPosition.x, minX, maxX);
-        clampedPosition.z = Mathf.Clamp(clampedPosition.z, minZ, maxZ);
-        transform.position = clampedPosition;
+        // You can add clamping code here if needed.
     }
 }
