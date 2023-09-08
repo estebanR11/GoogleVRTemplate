@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -24,19 +25,18 @@ public class GameManager : MonoBehaviour
     [Header("Levels")]
     [SerializeField] private GameObject[] levelPicked;
     [SerializeField] private GameObject baseLevel;
+    int lvl;
 
     [Header("Managers")]
     [SerializeField] private SoundManager soundManager;
+    AudioClip musicClip;
 
+    [SerializeField] GameObject FadeOut;
     private void Awake(){
-        if (instance != null && instance != this)
-        {
-            Destroy(gameObject);
-            return;
-        }
+    
 
         instance = this;
-        DontDestroyOnLoad(gameObject);
+
     }
 
     public void SetNewEmojiData(EmojiDataSO newEmoji)
@@ -44,6 +44,15 @@ public class GameManager : MonoBehaviour
         emojiSelectedData = newEmoji;
     }
 
+    public void SelectLevelId(int levelid)
+    {
+        lvl = levelid;
+    }
+    public void SelectMusicId(AudioClip clip) {
+        
+        musicClip = clip;
+        soundManager.SetAudioClip(musicClip);
+    }
     public void QuitApp()
     {
         Application.Quit();
@@ -52,5 +61,23 @@ public class GameManager : MonoBehaviour
     public void ResetLevel()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void Confirm()
+    {
+        baseLevel.SetActive(false);
+        StartCoroutine(LoadSceneSelected());
+        //soundManager.SetAudio(musicId);
+       // soundManager.SetAudioClip(musicClip);
+    }
+
+    IEnumerator LoadSceneSelected()
+    {
+        FadeOut.SetActive(true);
+        yield return new WaitForSeconds(1.5f);
+        SceneManager.LoadScene(lvl);
+        
+
+
     }
 }

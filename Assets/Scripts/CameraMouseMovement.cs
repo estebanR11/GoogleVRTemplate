@@ -11,7 +11,7 @@ public class CameraMouseMovement : MonoBehaviour
 
     private float yaw = 0f;
     private float pitch = 0f;
-
+    [SerializeField] Transform character;
     private void Update()
     {
         if (Application.isPlaying)
@@ -23,6 +23,7 @@ public class CameraMouseMovement : MonoBehaviour
             pitch -= mouseY * rotationSpeed;
 
             transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
+            character.rotation = Quaternion.Euler(0f, yaw, 0f);
         }
     }
 

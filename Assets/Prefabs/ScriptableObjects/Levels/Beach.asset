@@ -15,3 +15,4 @@ MonoBehaviour:
   levelObjectName: BeachLevel
   levelIcon: {fileID: 21300000, guid: d65b049ffb028094fab2e9750d817ebb, type: 3}
   levelName: Playa
+  id: 1

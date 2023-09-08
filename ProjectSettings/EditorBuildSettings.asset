@@ -11,5 +11,14 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: f179b5236a5442f46b9756bce48744cb
+  - enabled: 1
+    path: Assets/Scenes/Beach.unity
+    guid: 43bbdfc4148d3fe43bcdf9cfd8a20a7a
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: d98ac6da1427f434a9f584fe45668531
+  - enabled: 1
+    path: Assets/Scenes/Lake.unity
+    guid: 591f19bb68afebc4bb8aa263b2c3e7ce
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: aad65b6770606b84e915b2c8fe03a329, type: 2}

@@ -8,6 +8,7 @@ public class LevelDataSO : ScriptableObject
     public string levelObjectName;
     public Sprite levelIcon;
     public string levelName;
+    public int id;
 
     public GameObject GetLevelObject()
     {

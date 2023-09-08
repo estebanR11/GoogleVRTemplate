@@ -10,6 +10,9 @@ public class ConfirmButton : MonoBehaviour, IPointer
 
     float count;
 
+    public bool CanSelect = false;
+
+    
     public bool hasBeenSelected()
     {
         throw new System.NotImplementedException();
@@ -17,8 +20,8 @@ public class ConfirmButton : MonoBehaviour, IPointer
 
     public void OnPointerEnter()
     {
-
-        StartCoroutine(Selector());
+        if(CanSelect)
+         StartCoroutine(Selector());
     }
 
 

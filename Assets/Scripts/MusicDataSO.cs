@@ -9,4 +9,5 @@ public class MusicDataSO : ScriptableObject
     public AudioClip musicClip;
     public string musicName;
     public Sprite musicSprite;
+    public int musicIndex;
 }
