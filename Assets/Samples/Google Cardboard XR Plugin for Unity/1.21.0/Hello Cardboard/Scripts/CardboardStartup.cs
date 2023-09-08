@@ -47,12 +47,12 @@ public class CardboardStartup : MonoBehaviour
     /// </summary>
     public void Update()
     {
-        /*
+        
         if (Api.IsGearButtonPressed)
         {
             Api.ScanDeviceParams();
         }
-        */
+        
 
         if (Api.IsCloseButtonPressed)
         {
@@ -64,12 +64,12 @@ public class CardboardStartup : MonoBehaviour
             Api.Recenter();
         }
 
-        /*
+        
         if (Api.HasNewDeviceParams())
         {
             Api.ReloadDeviceParams();
         }
-        */
+        
 
         Api.UpdateScreenParams();
     }
