@@ -8,6 +8,7 @@ public class SoundManager : MonoBehaviour
     private static SoundManager instance;
 
     [SerializeField] private AudioClip[] clips;
+    [SerializeField] private float _volume;
 
     private AudioSource audioSource;
 
@@ -43,6 +44,8 @@ public class SoundManager : MonoBehaviour
 
             // Inicializa el AudioSource
             audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.loop = true;
+            audioSource.volume = _volume;
         }
     }
 

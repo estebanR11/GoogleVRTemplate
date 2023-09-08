@@ -7,9 +7,7 @@ using UnityEngine.Events;
 public class ConfirmButton : MonoBehaviour, IPointer
 {
     public UnityEvent OnConfirm;
-
-    float count;
-
+    private float _count;
     public bool CanSelect = false;
 
     
@@ -27,28 +25,24 @@ public class ConfirmButton : MonoBehaviour, IPointer
 
     public void OnPointerExit()
     {
-       
-
         StopAllCoroutines();
-        count = 0f;
+        _count = 0f;
     }
+
     IEnumerator Selector()
     {
-
-        while (count < 1.5f )
+        while (_count < 1.5f )
         {
-            count += Time.deltaTime;
+            _count += Time.deltaTime;
             yield return null;
         }
 
         OnConfirm.Invoke();
-
-
     }
 
     private void OnDisable()
     {
-        count = 0;
+        _count = 0;
         StopAllCoroutines();
     }
 }

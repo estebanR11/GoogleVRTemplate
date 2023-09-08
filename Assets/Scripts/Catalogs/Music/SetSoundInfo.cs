@@ -1,31 +1,31 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.Events;
 using UnityEngine.UI;
-
-public class SetEmojiInfo : MonoBehaviour
+using TMPro;
+public class SetSoundInfo : MonoBehaviour
 {
-    [SerializeField] EmojiDataSO emojiInfo;
+
+    [SerializeField] MusicDataSO musicData;
     [SerializeField] Image image;
     [SerializeField] GameObject selector;
-    [SerializeField] SetEmojiInfo[] allEmojis;
+    [SerializeField] SetSoundInfo[] allSounds;
     bool isPointed = false;
     [SerializeField] float count;
-    [SerializeField] ConfirmButton confirm;
-    [SerializeField] UnityEvent OnPicked;
+    [SerializeField] TextMeshProUGUI text;
     private void Start()
     {
+        if (image == null)
         image = GetComponent<Image>();
-        image.sprite = emojiInfo.emojiSprite;
+
+        image.sprite = musicData.musicSprite;
         selector.SetActive(false);
-        confirm.enabled = false;
+        text.text = musicData.musicName;
     }
     public void OnPointerEnter()
     {
-
-        isPointed=true;
+      
+        isPointed = true;
         StartCoroutine(Selector());
     }
 
@@ -46,8 +46,7 @@ public class SetEmojiInfo : MonoBehaviour
             yield return null;
         }
         selector.SetActive(true);
-        GameManager.Instance.SetNewEmojiData(emojiInfo);
-        OnPicked.Invoke();
+        GameManager.Instance.SelectMusicId(musicData.musicClip);
         deactivateSelectors(this);
     }
 
@@ -56,11 +55,11 @@ public class SetEmojiInfo : MonoBehaviour
         selector.SetActive(false);
     }
 
-    private void deactivateSelectors(SetEmojiInfo info)
+    private void deactivateSelectors(SetSoundInfo info)
     {
-        for(int i = 0; i < allEmojis.Length;    i++)
+        for (int i = 0; i < allSounds.Length; i++)
         {
-            allEmojis[i].DeactivateSelector();
+            allSounds[i].DeactivateSelector();
         }
     }
 }

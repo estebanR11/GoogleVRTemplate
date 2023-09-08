@@ -23,6 +23,8 @@ public class CameraMouseMovement : MonoBehaviour
             pitch -= mouseY * rotationSpeed;
 
             transform.rotation = Quaternion.Euler(pitch, yaw, 0f);
+
+            if (character != null)
             character.rotation = Quaternion.Euler(0f, yaw, 0f);
         }
     }
