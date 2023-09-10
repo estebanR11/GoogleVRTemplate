@@ -24,6 +24,7 @@ public class GuidesDataConfig : ScriptableObject
 public class GuideTextData
 {
     public float TimeExecute;
+    [TextArea(1,2)]
     public string Guide;
     public GuideEvents Event;
 }
