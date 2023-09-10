@@ -5589,7 +5589,7 @@ MonoBehaviour:
   OnConfirm:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1329917887}
         m_TargetAssemblyTypeName: AppController, Assembly-CSharp
         m_MethodName: QuitApp
         m_Mode: 1

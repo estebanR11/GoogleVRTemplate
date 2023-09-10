@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class CameraMouseMovement : MonoBehaviour
 {
+#if UNITY_EDITOR
     public float rotationSpeed = 5f;
 
     private float yaw = 0f;
@@ -28,5 +29,5 @@ public class CameraMouseMovement : MonoBehaviour
             character.rotation = Quaternion.Euler(0f, yaw, 0f);
         }
     }
-
+#endif
 }
