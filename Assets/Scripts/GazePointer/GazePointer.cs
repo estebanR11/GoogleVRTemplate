@@ -8,6 +8,7 @@ public class GazePointer : MonoBehaviour
     private enum GazeState
     {
         WaitPointer,
+        Action,
         Enter,
         Exit
     };
@@ -45,6 +46,7 @@ public class GazePointer : MonoBehaviour
                     if (_currentTime > _actionTime)
                     {
                         _Interactive.OnAction();
+                        _state = GazeState.Action;
                     }
                 }
             }
@@ -52,7 +54,7 @@ public class GazePointer : MonoBehaviour
         }
         else
         {
-            if (_state == GazeState.Enter)
+            if (_state == GazeState.Enter || _state == GazeState.Action)
             {
                 _Interactive.OnPointerExit();
                 _gazeView.Hide();
