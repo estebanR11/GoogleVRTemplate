@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class SetMapInfo : MonoBehaviour
+public class SetMapInfo : MonoBehaviour, IInteractive
 {
 
 
@@ -18,39 +18,23 @@ public class SetMapInfo : MonoBehaviour
     private void Start()
     {
         image = GetComponent<Image>();
-   
+
         selector.SetActive(false);
         text.text = mapData.levelName;
     }
-    public void OnPointerEnter()
+
+    public bool hasBeenSelected() { return true; }
+    public void OnPointerEnter() { }
+    public void OnPointerExit() { }
+
+
+    public void OnAction()
     {
-
-        isPointed = true;
-        StartCoroutine(Selector());
-    }
-
-
-    public void OnPointerExit()
-    {
-        isPointed = false;
-
-        StopAllCoroutines();
-        count = 0f;
-    }
-    IEnumerator Selector()
-    {
-
-        while (count < 1f && isPointed)
-        {
-            count += Time.deltaTime;
-            yield return null;
-        }
         selector.SetActive(true);
         GameManager.Instance.SelectLevelId(mapData.id);
         confirmButton.CanSelect = true;
         deactivateSelectors(this);
     }
-
     public void DeactivateSelector()
     {
         selector.SetActive(false);
@@ -63,4 +47,5 @@ public class SetMapInfo : MonoBehaviour
             allMaps[i].DeactivateSelector();
         }
     }
+
 }

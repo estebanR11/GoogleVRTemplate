@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c111eb6fc730549aadf2ebfb6005bf, type: 3}
+  m_Name: End
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: b412e0c330110044badd5159ec162b3a, type: 3}
+  Data:
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 4.2
+    Guide: "Practica estos ejercicios en tu d\xEDa a d\xEDa"
+    Event: 0
+  - TimeExecute: 7.2
+    Guide: 'Para ayudarte a conectar con la naturaleza '
+    Event: 0
+  - TimeExecute: 10.45
+    Guide: y cultivar la vitalidad de tu cuerpo.
+    Event: 0
+  - TimeExecute: 14.2
+    Guide: "perm\xEDteme acompa\xF1arte en futuras sesiones de meditaci\xF3n."
+    Event: 0
+  - TimeExecute: 15
+    Guide: Hasta pronto.
+    Event: 2

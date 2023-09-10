@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-public class SetSoundInfo : MonoBehaviour
+public class SetSoundInfo : MonoBehaviour, IInteractive
 {
 
     [SerializeField] MusicDataSO musicData;
@@ -16,43 +16,21 @@ public class SetSoundInfo : MonoBehaviour
     private void Start()
     {
         if (image == null)
-        image = GetComponent<Image>();
+            image = GetComponent<Image>();
 
         image.sprite = musicData.musicSprite;
         selector.SetActive(false);
         text.text = musicData.musicName;
     }
-    public void OnPointerEnter()
+    public bool hasBeenSelected() { return true; }
+
+    public void OnPointerEnter() { }
+    public void OnPointerExit() { }
+    public void OnAction()
     {
-      
-        isPointed = true;
-        StartCoroutine(Selector());
-    }
-
-
-    public void OnPointerExit()
-    {
-        isPointed = false;
-
-        StopAllCoroutines();
-        count = 0f;
-    }
-    IEnumerator Selector()
-    {
-
-        while (count < 1f && isPointed)
-        {
-            count += Time.deltaTime;
-            yield return null;
-        }
         selector.SetActive(true);
         GameManager.Instance.SelectMusicId(musicData.musicClip);
         deactivateSelectors(this);
-    }
-
-    public void DeactivateSelector()
-    {
-        selector.SetActive(false);
     }
 
     private void deactivateSelectors(SetSoundInfo info)
@@ -62,4 +40,9 @@ public class SetSoundInfo : MonoBehaviour
             allSounds[i].DeactivateSelector();
         }
     }
+    public void DeactivateSelector()
+    {
+        selector.SetActive(false);
+    }
+
 }

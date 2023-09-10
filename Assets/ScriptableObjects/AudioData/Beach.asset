@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c111eb6fc730549aadf2ebfb6005bf, type: 3}
+  m_Name: Beach
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 86c25b3704671ab4689f029dd1867f58, type: 3}
+  Data:
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: "Si\xE9ntate c\xF3modamente con las piernas cruzadas"
+    Event: 0
+  - TimeExecute: 0
+    Guide: 'Cierra los ojos '
+    Event: 0
+  - TimeExecute: 0
+    Guide: "y siente como la arena sostiene y nutre tu cuerpo Conect\xE1ndola con
+      la energ\xEDa de este hermoso"
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 0
+    Guide: 
+    Event: 0

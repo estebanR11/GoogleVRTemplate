@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c111eb6fc730549aadf2ebfb6005bf, type: 3}
+  m_Name: Forest
+  m_EditorClassIdentifier: 
+  Clip: {fileID: 8300000, guid: 096458217cb11434d8549f1213f4a9f7, type: 3}
+  Data:
+  - TimeExecute: 0
+    Guide: 
+    Event: 0
+  - TimeExecute: 5.2
+    Guide: "Si\xE9ntate c\xF3modamente con las piernas cruzadas."
+    Event: 0
+  - TimeExecute: 7.3
+    Guide: Cierra los ojos
+    Event: 3
+  - TimeExecute: 11.5
+    Guide: y siente como la arena sostiene y nutre tu cuerpo
+    Event: 0
+  - TimeExecute: 17.2
+    Guide: "conectanote con la energ\xEDa de este hermoso lugar."
+    Event: 0
+  - TimeExecute: 20
+    Guide: Respiremos muy lento.
+    Event: 0
+  - TimeExecute: 24
+    Guide: Empezaremos con los susurros del viento.
+    Event: 0
+  - TimeExecute: 26
+    Guide: 'Sigue con los ojos cerrados '
+    Event: 0
+  - TimeExecute: 29.5
+    Guide: 'y escucha el susurro de las hojas '
+    Event: 0
+  - TimeExecute: 34.5
+    Guide: "y el viento entre los \xE1rboles."
+    Event: 0
+  - TimeExecute: 41
+    Guide: "Respira en sinton\xEDa con este ritmo natural."
+    Event: 0
+  - TimeExecute: 45
+    Guide: Ahora hagamos abrazo de la naturaleza.
+    Event: 0
+  - TimeExecute: 49
+    Guide: "Imagina que est\xE1s rodeado por un abrazo suave"
+    Event: 0
+  - TimeExecute: 53
+    Guide: y protector de la naturaleza.
+    Event: 0
+  - TimeExecute: 55
+    Guide: A medida que Inhalas
+    Event: 0
+  - TimeExecute: 61
+    Guide: "Siente como te nutre de la energ\xEDa del bosque"
+    Event: 0
+  - TimeExecute: 66
+    Guide: Respira de manera tranquila.
+    Event: 0
+  - TimeExecute: 70
+    Guide: "Seguimos con renovaci\xF3n. Con cada inhalaci\xF3n "
+    Event: 0
+  - TimeExecute: 77
+    Guide: visualiza que inhalas la frescura y vitalidad del aire boscoso.
+    Event: 0
+  - TimeExecute: 83
+    Guide: "Siente como cada inhalaci\xF3n renueva tus c\xE9lulas y mente"
+    Event: 0
+  - TimeExecute: 91
+    Guide: inhala. Sostenemos... uno... dos... tres... cuatro... cinco...
+    Event: 0
+  - TimeExecute: 95
+    Guide: Exhala. Soltamos
+    Event: 0
+  - TimeExecute: 98
+    Guide: Muy bien.
+    Event: 0
+  - TimeExecute: 101
+    Guide: "Vamos con liberaci\xF3n, con cada exhalaci\xF3n."
+    Event: 0
+  - TimeExecute: 108
+    Guide: "Ahora, con cada exhalaci\xF3n imagina que liberas cualquier preocupaci\xF3n
+      o tensi\xF3n."
+    Event: 0
+  - TimeExecute: 116
+    Guide: Deja que el viento se lleve consigo todo lo que ya no necesitas.
+    Event: 0
+  - TimeExecute: 120
+    Guide: Inhala normal sin pensar en nada.
+    Event: 0
+  - TimeExecute: 122
+    Guide: Sostenemos
+    Event: 0
+  - TimeExecute: 127
+    Guide: 'y ahora exhala, liberamos '
+    Event: 0
+  - TimeExecute: 132
+    Guide: "y ya terminando. Hagamos uni\xF3n con los \xE1rboles."
+    Event: 0
+  - TimeExecute: 135
+    Guide: Abre suavemente los ojos
+    Event: 4
+  - TimeExecute: 140
+    Guide: " y observa los \xE1rboles a tu alrededor."
+    Event: 0
+  - TimeExecute: 144
+    Guide: "Siente c\xF3mo est\xE1s conectado con su antigua sabidur\xEDa"
+    Event: 0
+  - TimeExecute: 149
+    Guide: "Y c\xF3mo compartes una red invisible de energ\xEDa."
+    Event: 0
+  - TimeExecute: 154
+    Guide: Para finalizar, hacemos gratitud y cierre.
+    Event: 0
+  - TimeExecute: 159
+    Guide: "Lleva tus manos al coraz\xF3n en agradecimiento por esta sesi\xF3n"
+    Event: 0
+  - TimeExecute: 162
+    Guide: "rejuvenecedora de calma y conexi\xF3n."
+    Event: 0

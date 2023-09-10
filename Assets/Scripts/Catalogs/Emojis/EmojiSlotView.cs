@@ -3,15 +3,12 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class EmojiSlotView : MonoBehaviour 
+public class EmojiSlotView : MonoBehaviour , IInteractive
 {
     [SerializeField] private Image _image;
     [SerializeField] private Image _selector;
 
-    private bool _isPointed = false;
-    private float _count;
     private UnityEvent OnPicked;
-
 
     public void ConfigureSlot(Sprite sprite, UnityEvent onPicked)
     {
@@ -21,28 +18,12 @@ public class EmojiSlotView : MonoBehaviour
         OnPicked = onPicked;
     }
 
-    public void OnPointerEnter()
-    {
-        _isPointed = true;
-        StartCoroutine(Selector());
-    }
+    public bool hasBeenSelected(){ return true; }
 
-    public void OnPointerExit()
+    public void OnPointerEnter(){}
+    public void OnPointerExit(){}
+    public void OnAction()
     {
-        _isPointed = false;
-
-        StopAllCoroutines();
-        _count = 0f;
-    }
-
-    IEnumerator Selector()
-    {
-        while (_count < 1f && _isPointed)
-        {
-            _count += Time.deltaTime;
-            yield return null;
-        }
-        //GameManager.Instance.SetNewEmojiData(emojiInfo);
         OnPicked.Invoke();
     }
 

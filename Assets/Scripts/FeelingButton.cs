@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FeelingButton : MonoBehaviour, IPointer
+public class FeelingButton : MonoBehaviour, IInteractive
 {
 
     [SerializeField] EmojiCarrousel carrousel;
@@ -50,5 +50,10 @@ public class FeelingButton : MonoBehaviour, IPointer
         carrousel.UpdateEmoji(value);
         count = 0f;
         StopAllCoroutines();
+    }
+
+    public void OnAction()
+    {
+        ChangeEmoji();
     }
 }
