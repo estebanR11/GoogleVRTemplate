@@ -17,106 +17,174 @@ MonoBehaviour:
   - TimeExecute: 0
     Guide: 
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 6.2
     Guide: "Si\xE9ntate c\xF3modamente con las piernas cruzadas"
     Event: 0
+    sitsCharacter: 1
+    exit: 0
   - TimeExecute: 8.2
     Guide: 'Cierra los ojos '
     Event: 3
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 18.3
     Guide: "y siente como la arena sostiene y nutre tu cuerpo Conect\xE1ndola con
       la energ\xEDa de este hermoso lugar."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 21
     Guide: Respiremos muy lento.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 24.7
     Guide: "Empezaremos con los sonidos del oc\xE9ano."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 32.63
     Guide: Sigue con los ojos cerrados y escucha las olas del mar.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 36.72
     Guide: "Vamos a hacer lo siguiente con cada inhalaci\xF3n."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 40.89
     Guide: "Imagina que est\xE1s inhalando la frescura del oc\xE9ano"
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 46
     Guide: "Y con cada exhalaci\xF3n liberas cualquier tensi\xF3n."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 57.38
     Guide: Vamos, inhala. Sostenemos. Uno... Dos... Tres... Cuatro... Cinco... y
       exhalamos.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 60.64
     Guide: Muy bien.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 63.93
     Guide: Seguimos con el ritmo de las olas.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 68.58
     Guide: "Imagina que tu respiraci\xF3n sigue el ritmo de las olas."
-    Event: 0
+    Event: 4
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 72.55
     Guide: "Inhalaci\xF3n Cuando la ola llega a la orilla,"
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 75.56
     Guide: "Exhalaci\xF3n cuando se retira."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 80
     Guide: Siente como te fundes con el flujo natural.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 84.38
     Guide: "Hag\xE1moslo despacio."
-    Event: 0
+    Event: 3
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 87.76
     Guide: Muy bien.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 91.8
     Guide: Ahora Reflejos del sol.
-    Event: 0
+    Event: 4
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 97.6
     Guide: Visualiza el sol sobre el agua creando destellos dorados
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 99.7
     Guide: a medida que inhalas.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 109
     Guide: Imagina que la luz del sol llena tu ser nutrienote con vitalidad.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 112
     Guide: Muy bien.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 116
     Guide: "Ahora vamos con liberaci\xF3n, con las mareas."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 124.54
     Guide: "A medida que exhalas imagina que est\xE1s liberando cualquier tensi\xF3n
       o preocupaci\xF3n."
-    Event: 0
+    Event: 3
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 131.45
     Guide: Siente como las olas llevan consigo lo que ya no necesitas.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 135.31
     Guide: Saca todo eso
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 141.6
     Guide: "Ahora conexi\xF3n con el infinito abre suavemente los ojos"
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 149.62
     Guide: Busca donde puedas observar el horizonte donde el cielo y el mar se encuentran.
     Event: 4
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 158.75
     Guide: "Siente c\xF3mo te conectas con la vastedad del universo y la eternidad
       del tiempo."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 163.93
     Guide: Para finalizar, hacemos gratitud y cierre.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 138.74
     Guide: "Lleva tus manos al coraz\xF3n en agradecimiento"
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 173
     Guide: "Por esta sesi\xF3n rejuvenecedora de calma y conexi\xF3n."
     Event: 0
+    sitsCharacter: 0
+    exit: 0

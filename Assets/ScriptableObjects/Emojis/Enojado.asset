@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0628fe15e47702e428956e8036d37b95, type: 3}
   m_Name: Enojado
   m_EditorClassIdentifier: 
-  emojiSprite: {fileID: 21300000, guid: a9a781cbff2bf4b0ea0f6cddda64b998, type: 3}
+  emojiSprite: {fileID: 21300000, guid: f4bb7b4720e7ecb44a554e26a6f61bb2, type: 3}
   value: -5
   emojiName: Enojado

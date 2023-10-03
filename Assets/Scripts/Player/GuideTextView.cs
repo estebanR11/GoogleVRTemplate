@@ -8,21 +8,21 @@ public class GuideTextView : MonoBehaviour
 
     private void Start()
     {
-        _canvasGroup.alpha = 0;
+      //  _canvasGroup.alpha = 0;
     }
 
     public void Show()
     {
-        _canvasGroup.LeanAlpha(1, 0.5f);
+    //    _canvasGroup.LeanAlpha(1, 0.5f);
     }
 
     public void Hide()
     {
-        _canvasGroup.LeanAlpha(0, 0.5f);
+    //    _canvasGroup.LeanAlpha(0, 0.5f);
     }
 
     public void UpdateText(string text)
     {
-        guideText.text = text;
+        //guideText.text = text;
     }
 }

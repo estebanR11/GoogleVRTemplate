@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125c87e950902548a79deb40abce898, type: 3}
   m_Name: Violin
   m_EditorClassIdentifier: 
-  musicClip: {fileID: 8300000, guid: 8d3cf01fd6a718f44a46ba60743c604f, type: 3}
+  musicClip: {fileID: 8300000, guid: 07d734eadd000564086718b0bee69720, type: 3}
   musicName: Violin
-  musicSprite: {fileID: 21300000, guid: eee6309f2ddf227499ede3b656311615, type: 3}
+  musicSprite: {fileID: 21300000, guid: ba9c4c9fb29da6a44968f4a32479ce74, type: 3}
+  musicIndex: 0

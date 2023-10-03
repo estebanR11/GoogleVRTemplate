@@ -15,19 +15,19 @@ MonoBehaviour:
   lightingModel: 2
   useFlatLighting: 0
   renderQueueIndex: 0
-  color: {r: 0.514151, g: 0.8459502, b: 1, a: 0.5}
+  color: {r: 0.09718762, g: 0.39270952, b: 0.5283019, a: 0.5}
   specColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
   smoothness: 1
   enableLightAbsorption: 1
-  depthColor: {r: 0, g: 0.5253423, b: 0.754717, a: 0.85}
+  depthColor: {r: 0.11614455, g: 0.4169643, b: 0.5471698, a: 0.85}
   maxDepth: 5
-  enableFoam: 0
+  enableFoam: 1
   foamColor: {r: 1, g: 1, b: 1, a: 1}
   foamDistance: 4.05
   enableFoamHQ: 1
   foamNoiseScaleHQ: 1
   foamNoiseSpeedHQ: 1
-  shorelineFoamStrength: 0.231
+  shorelineFoamStrength: 0.143
   crestFoamStrength: 0.5
   crestMaxDepth: 10
   slopeFoamStrength: 0.5

@@ -14,4 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   musicClip: {fileID: 8300000, guid: 577e96841736d2e4792c931652904f99, type: 3}
   musicName: Tambores
-  musicSprite: {fileID: 21300000, guid: 1147e08e12fb72f42b8676ed9594cc75, type: 3}
+  musicSprite: {fileID: 21300000, guid: 20e09f1faa9434642956255dbde9cd05, type: 3}
+  musicIndex: 0

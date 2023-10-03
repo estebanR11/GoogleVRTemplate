@@ -6,7 +6,6 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     private static SoundManager instance;
-
     [SerializeField] private AudioClip[] clips;
     [SerializeField] private float _volume;
 
@@ -36,6 +35,7 @@ public class SoundManager : MonoBehaviour
         if (instance != null && instance != this)
         {
             Destroy(gameObject);
+            return;
         }
         else
         {
@@ -43,11 +43,16 @@ public class SoundManager : MonoBehaviour
             DontDestroyOnLoad(gameObject);
 
             // Inicializa el AudioSource
-            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource = gameObject.GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
             audioSource.loop = true;
             audioSource.volume = _volume;
         }
     }
+
 
     public void SetAudio(int id)
     {

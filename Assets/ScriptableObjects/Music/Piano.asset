@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4125c87e950902548a79deb40abce898, type: 3}
   m_Name: Piano
   m_EditorClassIdentifier: 
-  musicClip: {fileID: 8300000, guid: a1dced07e9e0972408642387732f657a, type: 3}
+  musicClip: {fileID: 8300000, guid: 4429fe8f29c1f574f9a9851a6d471df5, type: 3}
   musicName: Piano
-  musicSprite: {fileID: 21300000, guid: 1562ff164cd32a343b8db6d107d6cd8b, type: 3}
+  musicSprite: {fileID: 21300000, guid: d13f0e27c7bdbde44a1895dd3a96d48d, type: 3}
+  musicIndex: 0

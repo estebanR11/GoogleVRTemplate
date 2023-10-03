@@ -27,6 +27,8 @@ public class GuideTextData
     [TextArea(1,2)]
     public string Guide;
     public GuideEvents Event;
+    public bool sitsCharacter;
+    public bool exit;
 }
 
 public enum GuideEvents

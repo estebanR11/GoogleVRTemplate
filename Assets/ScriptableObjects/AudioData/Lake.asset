@@ -17,109 +17,145 @@ MonoBehaviour:
   - TimeExecute: 0
     Guide: 
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 5
     Guide: "Si\xE9ntate c\xF3modamente con las piernas cruzadas."
     Event: 0
+    sitsCharacter: 1
   - TimeExecute: 7
     Guide: Cierra los ojos
     Event: 3
+    sitsCharacter: 0
   - TimeExecute: 17
     Guide: "Siente como la arena sostiene y nutre tu cuerpo conect\xE1ndola con la
       energ\xEDa de este hermoso lugar"
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 20
     Guide: Respiremos muy lento.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 24
     Guide: Iniciaremos con reflejos en el agua
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 29
     Guide: Continua ojos cerrados y siente la calma que el lago te ofrece.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 33
     Guide: "Imagina que cada inhalaci\xF3n te llena de claridad"
-    Event: 0
+    Event: 4
+    sitsCharacter: 0
   - TimeExecute: 38
     Guide: "y cada exhalaci\xF3n libera cualquier turbiedad."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 49
     Guide: Inhala, sostenemos... Uno... Dos... Tres... Cuatro... Cinco... y exhalamos
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 53
     Guide: Ahora abrazo de la calma.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 57
     Guide: Visualiza que te sumerges en el agua del lago mentalmente.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 58
     Guide: A medida que lo haces
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 64
     Guide: "siente c\xF3mo te envuelve una sensaci\xF3n de paz y serenidad."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 69
     Guide: Respiremos de forma tranquila.
-    Event: 0
+    Event: 3
+    sitsCharacter: 0
   - TimeExecute: 73
     Guide: "C\xF3mo vamos?"
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 76
     Guide: "Seguimos con renovaci\xF3n l\xEDquida."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 78
     Guide: "Con cada inhalaci\xF3n."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 84
     Guide: "Imagina que est\xE1s absorbiendo la frescura y vitalidad del agua."
-    Event: 0
+    Event: 4
+    sitsCharacter: 0
   - TimeExecute: 88
     Guide: "Siente como esta energ\xEDa fluye a trav\xE9s de ti."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 92
     Guide: Espectacular, verdad?
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 96
     Guide: "Hagamos ahora liberaci\xF3n con cada exhalaci\xF3n."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 98
     Guide: A medida que exhalas,
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 104
     Guide: "imagina que est\xE1s liberando cualquier carga emocional o mental."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 110
     Guide: "Deja que las ondas del lago dispersen cualquier tensi\xF3n."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 114
     Guide: Repitamos el ejercicio.
-    Event: 0
+    Event: 3
+    sitsCharacter: 0
   - TimeExecute: 116
     Guide: a medida que exhalas,
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 121
     Guide: "imagina que est\xE1s liberando cualquier carga emocional o mental."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 128
     Guide: "Deja que las ondas del lago dispersen cualquier tensi\xF3n."
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 131
     Guide: Acabamos con reflejo de la quietud.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 134
     Guide: Abre suavemente los ojos
     Event: 4
+    sitsCharacter: 0
   - TimeExecute: 143
     Guide: Observa la superficie del lago, que refleja la tranquilidad y la profundidad.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 148
     Guide: Siente como te conectas con tu propia serenidad interior.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 154
     Guide: Para finalizar, hacemos gratitud y cierre.
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 158
     Guide: "Lleva tus manos al coraz\xF3n en agradecimiento"
     Event: 0
+    sitsCharacter: 0
   - TimeExecute: 164
     Guide: "Por esta sesi\xF3n rejuvenecedora de calma y conexi\xF3n."
     Event: 0
+    sitsCharacter: 0

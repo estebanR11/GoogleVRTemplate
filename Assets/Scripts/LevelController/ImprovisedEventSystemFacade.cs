@@ -1,13 +1,15 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class ImprovisedEventSystemFacade : MonoBehaviour 
 {
     public Animator _instructorController;
     public FadeEyesView _fadeEyesView;
-
+    [SerializeField] float timer = 90f;
     public void InstructorStart()
     {
         _instructorController.SetBool("Start", true);
+
     }
     public void InstructorEnd()
     {
@@ -47,4 +49,6 @@ public class ImprovisedEventSystemFacade : MonoBehaviour
                 break;
         }
     }
+
+
 }

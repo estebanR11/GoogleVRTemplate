@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0628fe15e47702e428956e8036d37b95, type: 3}
   m_Name: Triste
   m_EditorClassIdentifier: 
-  emojiSprite: {fileID: 21300000, guid: db1b3ced236f54961b4f5b70017331ae, type: 3}
+  emojiSprite: {fileID: 21300000, guid: 51bc0d94e1ff12d4092d9156d34e0856, type: 3}
   value: -4
   emojiName: Triste

@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0628fe15e47702e428956e8036d37b95, type: 3}
   m_Name: Preocupado
   m_EditorClassIdentifier: 
-  emojiSprite: {fileID: 21300000, guid: a3f1af3dc7a4b41f5aa61bc1664ee913, type: 3}
+  emojiSprite: {fileID: 21300000, guid: fa7d2aaff39e5bb45b737641c8b376e4, type: 3}
   value: -2
   emojiName: Preocupado

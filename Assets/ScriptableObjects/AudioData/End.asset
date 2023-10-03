@@ -17,18 +17,30 @@ MonoBehaviour:
   - TimeExecute: 0
     Guide: 
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 4.2
     Guide: "Practica estos ejercicios en tu d\xEDa a d\xEDa"
     Event: 0
+    sitsCharacter: 0
+    exit: 1
   - TimeExecute: 7.2
     Guide: 'Para ayudarte a conectar con la naturaleza '
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 10.45
     Guide: y cultivar la vitalidad de tu cuerpo.
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 14.2
     Guide: "perm\xEDteme acompa\xF1arte en futuras sesiones de meditaci\xF3n."
     Event: 0
+    sitsCharacter: 0
+    exit: 0
   - TimeExecute: 15
     Guide: Hasta pronto.
     Event: 2
+    sitsCharacter: 0
+    exit: 0

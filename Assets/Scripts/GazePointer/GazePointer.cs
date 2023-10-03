@@ -21,7 +21,8 @@ public class GazePointer : MonoBehaviour
     [SerializeField] private GazeView _gazeView;
     [SerializeField] private float _currentTime;
     [SerializeField] private float _actionTime;
-
+    [SerializeField] private float minRotationX = -45.0f;
+    [SerializeField] private float maxRotationX = 45.0f;
     private void Update()
     {
         RaycastHit hit;
@@ -68,6 +69,13 @@ public class GazePointer : MonoBehaviour
         {
             _Interactive.OnPointerEnter();
         }
+        float currentRotationX = transform.rotation.eulerAngles.x;
+
+        // Limita la rotación en el eje X
+        currentRotationX = Mathf.Clamp(currentRotationX, minRotationX, maxRotationX);
+
+        // Aplica la rotación limitada
+        transform.rotation = Quaternion.Euler(currentRotationX, transform.rotation.eulerAngles.y, transform.rotation.eulerAngles.z);
 
     }
 }

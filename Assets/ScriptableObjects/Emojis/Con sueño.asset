@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0628fe15e47702e428956e8036d37b95, type: 3}
   m_Name: "Con sue\xF1o"
   m_EditorClassIdentifier: 
-  emojiSprite: {fileID: 21300000, guid: 0ad5df9306d114b89844fc4305839518, type: 3}
+  emojiSprite: {fileID: 21300000, guid: 820ff82e683042742a9b27f142656cdd, type: 3}
   value: -3
   emojiName: "Con sue\xF1o"
